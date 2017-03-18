@@ -121,7 +121,7 @@ player.prototype._scan = function(ctx) {
       return resolve(ctx);
     }
     scanner({
-        name: ctx.options.device ? ctx.options.device + '.local' : null,
+        name: ctx.options.device ? ctx.options.device : null,
         ttl: ctx.options.ttl,
       },
       function(err, service) {
